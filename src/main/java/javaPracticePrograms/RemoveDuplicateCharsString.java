@@ -1,6 +1,5 @@
 package javaPracticePrograms;
 
-import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 
 public class RemoveDuplicateCharsString {
@@ -10,9 +9,9 @@ public class RemoveDuplicateCharsString {
         String str = "abbbbccdddaaeefff"; // expected output is abcdef
         char[] charArray = str.toCharArray();
         int l = charArray.length;
-        LinkedHashSet<Character> h = new LinkedHashSet();
+        LinkedHashSet<Character> h = new LinkedHashSet<>();
         StringBuilder sb = new StringBuilder();
-        for (int i = 0; i<l; i++) {
+        for (int i = 0; i <l; i++) {
             h.add(charArray[i]);
         }
 
