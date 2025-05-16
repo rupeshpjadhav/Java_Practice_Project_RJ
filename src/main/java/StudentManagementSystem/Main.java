@@ -6,9 +6,9 @@ public class Main {
         List<Student> studentList = new ArrayList<>();
 
         // Creating students
-        Student s1 = new Student("Alice", 20, "S001");
-        Student s2 = new Student("Bob", 22, "S002");
-        Student s3 = new Student("Charlie", 19, "S003");
+        Student s1 = new Student("Alice Storey", 33, "S-001");
+        Student s2 = new Student("Bob Marley", 22, "S-002");
+        Student s3 = new Student("Charlie", 19, "S-003");
 
         // Enrolling courses
         s1.enrollCourse("Math");
@@ -32,7 +32,7 @@ public class Main {
 
         // Exception handling demo
         try {
-            Student found = findStudentById(studentList, "S004");
+            Student found = findStudentById(studentList, "S-004");
             found.printStudentInfo();
         } catch (NoSuchElementException e) {
             System.out.println(e.getMessage());
